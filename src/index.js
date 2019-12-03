@@ -6,7 +6,7 @@ aplication.get('/', function (req, res) {
   res.send('Hello World!')
 })
 aplication.get('/users', (req, res) => {
-res.json([]);
+res.json([{id : 0}]);
 })
 aplication.post('/user', (req, res) => {
  users.push( { id: 0 })
