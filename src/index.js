@@ -25,9 +25,11 @@ aplication.delete('/user/:id', (req, res) => {
   //const user = [];
   //users.find(user => user.id == req.params.id);
   if(user==true){
+    user=[];
 res.status(200).json(user);
     
   }else {
+    user=[];
     res.status(204).json(user);
   }
  
