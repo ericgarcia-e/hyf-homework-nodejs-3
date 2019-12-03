@@ -5,10 +5,10 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 app.get('/users', (req, res) => {
-res.json([]);
+res.json([{id:0}]);
 })
 app.post('/users', (req, res) => {
-  res.json([]);
+  res.json([{id:0}]);
   })
 app.get('/user/:id ', (req, res) => {
 
