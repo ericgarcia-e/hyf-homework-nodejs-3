@@ -26,7 +26,7 @@ aplication.delete('/user/:id', (req, res) => {
   //users.find(user => user.id == req.params.id);
   if(user==true){
     user=[];
-res.status(200).json(user);
+res.status(202).json(user);
     
   }else {
     user=[];
