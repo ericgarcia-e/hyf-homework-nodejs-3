@@ -21,13 +21,13 @@ aplication.post('/user', (req, res) => {
     const user = users.find(user => user.id == req.params.id);
     res.json(user);
 });
-aplication.delete('/user/:id', (req, res) => {
+aplication.delete('/user/ 0', (req, res) => {
   //const user = [];
   //users.find(user => user.id == req.params.id);
   if(user==true){
     user=[];
 res.status(202).json(user);
-    
+    ok
   }else {
     user=[];
     res.status(204).json(user);
