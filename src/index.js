@@ -1,12 +1,25 @@
 const express = require('express')
-const app = express()
+const aplication = express()
+let users = [];
  
-app.get('/', function (req, res) {
+aplication.get('/', function (req, res) {
   res.send('Hello World!')
 })
-app.get('/users', (req, res) => {
-res.json([]);
+aplication.get('/users', (req, res) => {
+res.json(users);
 })
-app.listen(3000, ()=>{
+aplication.post('/user', (req, res) => {
+ users.push( { id: 0 })
+  res.json(users);
+  })
+  aplication.get('/users', (req, res) => {
+    users.push( { id: 0 })
+     res.json(users);
+     })
+  aplication.get('/user/:id', (req, res) => {
+    const user = users.find(user => user.id == req.params.id);
+    res.json(user);
+});
+aplication.listen(3000, ()=>{
     console.log("listen the port 3000")
 });
