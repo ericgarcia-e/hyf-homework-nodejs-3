@@ -7,7 +7,10 @@ app.get('/', function (req, res) {
 app.get('/users', (req, res) => {
 res.json([]);
 })
-app.post('/user/:id ', (req, res) => {
+app.post('/users', (req, res) => {
+  res.json([]);
+  })
+app.get('/user/:id ', (req, res) => {
 
   res.json([{id:0}]);
   })
