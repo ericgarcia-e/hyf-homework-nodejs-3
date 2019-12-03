@@ -1,7 +1,7 @@
 const express = require('express')
 const aplication = express()
 let users = [];
-let user=[];
+
  
 aplication.get('/', function (req, res) {
   res.send('Hello World!')
@@ -21,13 +21,13 @@ aplication.post('/user', (req, res) => {
     const user = users.find(user => user.id == req.params.id);
     res.json(user);
 });
-aplication.delete('/user/ 0', (req, res) => {
-  //const user = [];
+aplication.delete('/user/:id', (req, res) => {
+  
   //users.find(user => user.id == req.params.id);
-  if(user==true){
-    user=[];
+  if(user.length>0){
+    users=[];
 res.status(202).json(user);
-    ok
+    
   }else {
     user=[];
     res.status(204).json(user);
