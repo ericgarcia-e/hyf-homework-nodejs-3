@@ -8,6 +8,7 @@ app.get('/users', (req, res) => {
 res.json([]);
 })
 app.post('/user/:id ', (req, res) => {
+
   res.json([{id:0}]);
   })
 app.listen(3000, ()=>{
