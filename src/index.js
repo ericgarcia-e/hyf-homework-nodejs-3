@@ -26,11 +26,11 @@ aplication.delete('/user/:id', (req, res) => {
   //users.find(user => user.id == req.params.id);
   if(user.length>0){
     users=[];
-res.status(202).json(user);
+res.status(202).json(users);
     
   }else {
-    user=[];
-    res.status(204).json(user);
+    users=[];
+    res.status(204).json(users);
   }
  
 });
