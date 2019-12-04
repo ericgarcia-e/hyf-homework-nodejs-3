@@ -24,7 +24,7 @@ aplication.post('/user', (req, res) => {
 aplication.delete('/user/:id', (req, res) => {
   
   //users.find(user => user.id == req.params.id);
-  if(user.length>0){
+  if(users.length>0){
     users=[];
 res.status(202).json(users);
     
